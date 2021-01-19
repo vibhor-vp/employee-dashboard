@@ -29,7 +29,7 @@
 }
 
 .section{
-    margin-top: 20%;
+    margin-top: 30%;
     background-color: darkslategrey;
     color: white;
     padding-left: 35%;
@@ -58,13 +58,14 @@
 
 .popularity_section{
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .profile_detail_block{
     padding: 10px;
     background-color: black;
+    border-radius: 10px;
 }
 
 .headin_name{
