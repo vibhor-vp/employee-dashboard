@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles/margins.scss';
+@import './styles/slider.scss';
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(./assets/_Font/Roboto-Light.ttf);
+  }
+
+
+
+  p, h1{
+      font-family: Roboto-Light;
+  }
+

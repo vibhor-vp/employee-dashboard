@@ -1,0 +1,35 @@
+<div class="dashboard_container">
+    <div class="side_nav">
+        <div class="logo_image_container">
+            <img class="logo_img" src="../../assets/images/_logo/the-godfather.svg">
+        </div>
+        <div class="emp_list_section">
+            <div class="emp_block" *ngFor="let emp of employees" (click)="empClick(emp)"
+                [ngClass]="{'emp_selected': emp.isSelected}">
+                <p class="emp_name" [ngStyle]="{'font-size': emp.font_size + 'px'}"
+                    [ngClass]="{'emp_highlighted': emp.isSelected || emp.isHighlighted}">{{emp.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" *ngIf="selectedEmp">
+        <div class="emp_detail_container">
+            <div class="profile_cont">
+                <img class="profile_img" [src]="selectedEmp.image">
+            </div>
+            <div class="profile_detail_cont">
+                <h1 class="margin_unset headin_name">{{selectedEmp.name}}</h1>
+                <div class="popularity_section">
+                    <p class="margin_unset">Popularity</p>
+                    <div class="slidecontainer margin_left_20 ">
+                        <input class="slider" type="range" min="1" max="5" [(ngModel)]="selectedEmp.popularity"
+                            (ngModelChange)="popularityChange($event)">
+                    </div>
+                </div>
+                <div class="profile_detail_block">
+                    <h3 class="margin_unset">Biography</h3>
+                    <p>{{selectedEmp.biography}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

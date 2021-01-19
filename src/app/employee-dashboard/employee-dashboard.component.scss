@@ -1,0 +1,94 @@
+.dashboard_container{
+    background-image: url('../../assets/images/header_image/godfather_header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    // overflow: auto;
+}
+
+.side_nav{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    width: 25%;
+    z-index: 10;
+}
+
+.logo_image_container{
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.logo_img{
+    width: 150px;
+}
+
+.section{
+    margin-top: 20%;
+    background-color: darkslategrey;
+    color: white;
+    padding-left: 35%;
+    height: 100%;
+    position: relative;
+}
+
+.emp_detail_container{
+    display: flex;
+    position: absolute;
+    top: -80px;
+}
+
+.profile_img{
+    height: 150px;
+    width: 150px;
+}
+
+.profile_cont{
+    padding: 20px;
+}
+
+.profile_detail_cont{
+    padding: 20px;
+}
+
+.popularity_section{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.profile_detail_block{
+    padding: 10px;
+    background-color: black;
+}
+
+.headin_name{
+    font-size: 60px;
+}
+
+.emp_list_section{
+    padding: 10px 10px;
+    color: white;
+}
+
+.emp_name{
+    padding: 10px;
+    text-align: center;
+}
+
+.emp_block{
+    cursor: pointer;
+}
+
+.emp_selected{
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.emp_highlighted{
+    color: lightblue;
+}
